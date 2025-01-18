@@ -58,12 +58,13 @@ def scene_from_json(scene_id):
         scene["image"] = thumbnail
     if url := yt_json.get("webpage_url"):
         scene["url"] = url
-    if Studio := yt_json.get("channel"):
-        scene["Studio"] = [{"name":Studio}]
-    if casts := yt_json.get("cast", [])+yt_json.get("uploader"):
-        scene["performers"] = [{"name": cast} for cast in casts]
-    if Details := yt_json.get("description"):
-        scene["Details"] = Details
+    if studio := yt_json.get("channel"):
+        scene["Studio"] = {"name":studio}
+    if casts := yt_json.get("uploader"):
+        scene["performers"] = [{"name":casts}]
+    
+
+
     tags = yt_json.get("tags", []) + yt_json.get("categories", [])
     scene["tags"] = [{"name": tag} for tag in tags]
 
@@ -75,6 +76,11 @@ def scene_from_json(scene_id):
         s = datetime.datetime.strptime(upload_on, "%Y%m%d")
         upload_on = s.strftime("%B %d, %Y")
         scene["date"] = s.strftime("%Y-%m-%d")
+
+    if details := yt_json.get("description"):
+        scene["details"] = details
+    else:
+        scene["details"] = f"Uploaded to {tubesite} on {upload_on} by {upload_by}"
 
     return scene
 
