@@ -24,6 +24,8 @@ performerByURL:
       - femout.xxx/tour/models
       - femoutsex.xxx/tour/models
       - groobygirls.com/tour/models
+      - joeystransfeetgirls.com/tour/models
+      - kellyquellxxx.com/tour/models
       - realtgirls.com/tour/models
       - tgirlsex.xxx/tour/models
       - tgirls.porn/tour/models
@@ -67,6 +69,8 @@ sceneByURL:
       - franks-tgirlworld.com
       - grooby-archives.com
       - groobygirls.com
+      - joeystransfeetgirls.com
+      - kellyquellxxx.com
       - ladyboy-ladyboy.com
       - ladyboy.xxx
       - realtgirls.com
@@ -117,6 +121,9 @@ xPathScrapers:
               - regex: (\d)(st|[nr]d|th)
                 with: "$1"
           - parseDate: 2 January
+          - parseDate: 2 Jan
+          - parseDate: January 2
+          - parseDate: Jan 2
   performerScraperB:
     performer:
       Name: *name
@@ -213,7 +220,7 @@ xPathScrapers:
       Measurements: //li/b[text()="Breast Size:"]/following-sibling::text()
   sceneScraper:
     scene:
-      Title: &title //p[@class="trailertitle"]/text()|//div[@class="trailer_toptitle_left"]/text()
+      Title: &title //p[@class="trailertitle"]/text()|//div[@class="trailer_toptitle_left"]/text()[last()]
       Date: &date
         selector: //div[@class="setdesc"]//b[contains(.,"Added")]/following-sibling::text()[1]
         postProcess:
@@ -299,4 +306,4 @@ xPathScrapers:
               - regex: ^/
                 with: https://www.transvr.com/
       Tags: *tagsVR
-# Last Updated November 22, 2024
+# Last Updated May 16, 2025
