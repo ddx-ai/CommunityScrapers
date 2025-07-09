@@ -36,7 +36,7 @@ _studios = {
     },
     "allinthestepfamily.com": {
         "api": "all-in-the-step-family.mymember.site",
-        "name": "All in the Step-Family"
+        "name": "All in the Step-Family",
     },
     "alterpic.com": {
         "api": "alterpic.mymember.site",
@@ -45,6 +45,10 @@ _studios = {
     "amieesfetishhouse.com": {
         "api": "amiees-fetish-house.mymember.site",
         "name": "Amiees Fetish House",
+    },
+    "anistarxxx.com": {
+        "api": "anistarxxx.mymember.site",
+        "name": "AniStarXXX",
     },
     "asianmassagemaster.com": {
         "api": "asianmassagemaster.mymember.site",
@@ -246,6 +250,10 @@ _studios = {
         "api": "marvalstudio.mymember.site",
         "name": "MarValStudio",
     },
+    "members.baebihel.com": {
+        "api": "baebi-hel.mymember.site",
+        "name": "Baebi Hel",
+    },
     "michaelfittnation.com": {
         "api": "michaelfittnation.mymember.site",
         "name": "Michael Fitt",
@@ -357,6 +365,10 @@ _studios = {
     "sexyhippies.com": {
         "api": "sexyhippies.mymember.site",
         "name": "Sexy Hippies",
+    },
+    "sephypink.com": {
+        "api": "sephypink.mymember.site",
+        "name": "Persephone Pink",
     },
     "shemalevalentina.com": {
         "api": "shemalevalentina.mymember.site",
