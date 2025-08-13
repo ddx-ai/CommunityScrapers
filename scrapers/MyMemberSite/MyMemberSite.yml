@@ -30,6 +30,7 @@ galleryByURL:
       - curvymary.com/photosets/
       - dannijones.com/photosets/
       - deemariexxx.com/photosets/
+      - dirtydemi.com/photosets/
       - europornvids.com/photosets/
       - faexcheta.com/photosets/
       - fetiliciousfans.com/photosets/
@@ -109,6 +110,13 @@ galleryByURL:
       - whatlizannelikes.com/photosets/
       - yourfitcrush.com/photosets/
 
+sceneByFragment:
+  action: script
+  script:
+    - python
+    - MyMemberSite.py
+    - scene-by-url
+
 sceneByURL:
   - action: script
     script:
@@ -138,6 +146,7 @@ sceneByURL:
       - curvymary.com/videos/
       - dannijones.com/videos/
       - deemariexxx.com/videos/
+      - dirtydemi.com/videos/
       - europornvids.com/videos/
       - faexcheta.com/videos/
       - fetiliciousfans.com/videos/
